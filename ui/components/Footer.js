@@ -7,7 +7,7 @@ export const Footer = () => {
   const colorValue = useColorModeValue("light", "dark")
 
   return (
-    <Container position="fixed" bottom="0" width="100%" py={6}>
+    <Container position="relative" bottom="0" width="100%" py={6}>
       <Center>
         <Image
           width="100px"
