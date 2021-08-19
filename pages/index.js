@@ -4,7 +4,7 @@
 import Head from "next/head"
 import React, { useRef, useEffect } from "react"
 
-import { Image, VStack, useColorModeValue, Center } from "@chakra-ui/react"
+import { Image, VStack, useColorModeValue, Center, Link, Text, Box } from "@chakra-ui/react"
 import { Container } from "../ui/components/Container"
 import { Main } from "../ui/components/Main"
 import { DarkModeSwitch } from "../ui/components/DarkModeSwitch"
@@ -26,7 +26,7 @@ function LandingPage() {
           <title>ContentFly.app</title>
         </Head>
 
-        <VStack spacing={20}>
+        <VStack spacing={10} pb={10}>
           <Center>
             <Image
               width="300px"
@@ -41,15 +41,20 @@ function LandingPage() {
             Connecting high quality content creators to brands, running on Dfinity Internet Computer
           </GradientText>
 
-          <lottie-player
-            id="firstLottie"
-            ref={ref}
-            autoplay
-            loop
-            mode="normal"
-            src="https://assets4.lottiefiles.com/packages/lf20_anre6w2q.json"
-            style={{ width: "300px", height: "300px" }}
-          ></lottie-player>
+          <Box pb={0}>
+            <lottie-player
+              id="firstLottie"
+              ref={ref}
+              autoplay
+              loop
+              mode="normal"
+              src="https://assets4.lottiefiles.com/packages/lf20_anre6w2q.json"
+              style={{ width: "300px", height: "300px" }}
+            />
+          </Box>
+          <Text as="i" textAlign="right" fontSize="sm">
+            Credits: <Link href="https://lottiefiles.com/JAStudio" isExternal>JAStudio</Link>
+          </Text>
         </VStack>
       </Main>
       <DarkModeSwitch />
