@@ -38,8 +38,7 @@ function LandingPage() {
           </Center>
 
           <GradientText>
-            Content Marketplace connecting high quality creators to brands,
-            running on Dfinity Internet Computer
+            Connecting high quality content creators to brands, running on Dfinity Internet Computer
           </GradientText>
 
           <lottie-player
