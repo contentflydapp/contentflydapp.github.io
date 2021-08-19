@@ -1,5 +1,5 @@
 import React from "react"
-import { Image, Center, useColorModeValue, Link, VStack } from "@chakra-ui/react"
+import { Image, Center, useColorModeValue, Link, VStack, Text } from "@chakra-ui/react"
 
 import { Container } from "./Container"
 
@@ -27,6 +27,9 @@ export const Footer = () => {
       <Link href="https://medium.com/contentfly-app-blog" isExternal>
           Medium Blog
       </Link>
+      <Text as="i" textAlign="right" fontSize="sm">
+          Animation Credits: <Link href="https://lottiefiles.com/JAStudio" isExternal>JAStudio</Link>
+      </Text>
       </VStack>
     </Container>
   )

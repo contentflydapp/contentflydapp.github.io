@@ -52,9 +52,7 @@ function LandingPage() {
               style={{ width: "300px", height: "300px" }}
             />
           </Box>
-          <Text as="i" textAlign="right" fontSize="sm">
-            Credits: <Link href="https://lottiefiles.com/JAStudio" isExternal>JAStudio</Link>
-          </Text>
+          <Text fontSize="4xl" fontWeight="medium">Acquire Content that Make You Fly</Text>
         </VStack>
       </Main>
       <DarkModeSwitch />
