@@ -52,7 +52,7 @@ function LandingPage() {
               style={{ width: "300px", height: "300px" }}
             />
           </Box>
-          <Text fontSize="4xl" fontWeight="medium">Acquire Content that Make You Fly</Text>
+          <Text fontSize="4xl" fontWeight="medium">Acquire Content that Makes You Fly</Text>
         </VStack>
       </Main>
       <DarkModeSwitch />
