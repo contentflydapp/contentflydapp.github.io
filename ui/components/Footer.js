@@ -1,5 +1,5 @@
 import React from "react"
-import { Image, Center, useColorModeValue, Link, VStack, Text } from "@chakra-ui/react"
+import { Image, Center, useColorModeValue, Link, VStack, HStack } from "@chakra-ui/react"
 
 import { Container } from "./Container"
 
@@ -18,19 +18,17 @@ export const Footer = () => {
           ignoreFallback={true}
         />
       </Center>
-      <Link href="mailto://hello@contentfly.app">
-          hello@contentfly.app
-      </Link>
-      <Link href="https://twitter.com/ContentFlyApp" isExternal>
-          Twitter
-      </Link>
-      <Link href="https://medium.com/contentfly-app-blog" isExternal>
-          Medium Blog
-      </Link>
-      <Text as="i" textAlign="right" fontSize="sm">
-          Animation Credits: <Link href="https://lottiefiles.com/JAStudio" isExternal>JAStudio</Link>
-      </Text>
       </VStack>
+
+      <HStack pt={6}>
+        <Link href="mailto://hello@contentfly.app">hello@contentfly.app</Link>
+        <Link href="https://twitter.com/ContentFlyApp" isExternal>
+          Twitter
+        </Link>
+        <Link href="https://medium.com/contentfly-app-blog" isExternal>
+          Medium Blog
+        </Link>
+      </HStack>
     </Container>
   )
 }
