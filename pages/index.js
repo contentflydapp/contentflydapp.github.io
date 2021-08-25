@@ -25,7 +25,7 @@ function LandingPage() {
   })
 
   return (
-    <Container height="100vh">
+    <Container height="120vh">
       <Main>
         <Head>
           <title>ContentFly.app</title>

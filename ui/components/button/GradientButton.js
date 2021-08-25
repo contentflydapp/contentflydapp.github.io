@@ -2,7 +2,7 @@ import React from "react"
 
 import { Button } from "@chakra-ui/react"
 
-export const GradientButton = props => {
+export const GradientButton = React.forwardRef((props, ref) => {
   return (
     <Button
       h="3rem"
@@ -19,9 +19,12 @@ export const GradientButton = props => {
       _focus={{
         bgGradient: "linear(to-l, #620FAE, #FA1B69)"
       }}
+      ref={ref}
       {...props}
     >
       {props.children}
     </Button>
   )
-}
+})
+
+GradientButton.displayName = "GradientButton"
