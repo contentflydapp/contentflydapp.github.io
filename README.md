@@ -1,6 +1,6 @@
 # Content Fly Web Landing Page
 
-This project is a Next.js app for Content Fly web landing page.
+This project is a static HTML/JS/CSS exported from Mobirise for Content Fly Web Landing Page.
 
 ## Author
 
